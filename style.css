@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wishes{
+    padding-top: 30px;
+    position: relative;
+    color: white;
+}
+h1{
+    font-size: 70px !important;
+    font-family: 'Phudu', cursive !important;
+}
+p{
+    color:white;
+    font-size:20px;
+    font-family: 'Urbanist', sans-serif !important;
+}
+.wishes::after{
+    content: "";
+    width:100%;
+    height: 90px;
+    background-color: #750175;
+    right :10px;
+    position: absolute;
+    animation: reveal 2s ease-in-out 1s both 1;
+}
+/* .container{
+    height:100vh;
+    width:100vw;
+} */
+body{
+    height:100vh;
+    width:100vw;
+    background-color: 	#750175 !important;
+}
+
+/* CSS FOR THE BIG CIRCLE */
+.bigcircle{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    height: 270px;
+    width: 270px;
+    border-radius:50%;
+    background-color: gold;
+    position:absolute;
+    top:-34px;
+    border: 2px solid yellow;
+}
+.bigcircle::after{
+    content:"aaaaaaaaaaaaaaaaaaaaa";
+    position:absolute;
+    font-size: 6em;
+    top:15px;
+    color:transparent;
+    text-decoration-style:wavy;
+    text-decoration-color: whitesmoke;
+    text-decoration-line: underline;
+}
+.smallcircle{
+    height: 100px;
+    width: 100px;
+    border-radius:50%;
+    background-color: red;
+    position:absolute;
+    top:50px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid yellow;
+}
+.smallcircle img{
+    height: 35px;
+    width: 35px;
+    position:absolute;
+    top:28px;
+}
+.ringcircle{
+    height: 150px;
+    width: 150px;
+    border-radius:50%;
+    background-color: green;
+    position:absolute;
+    top:26px;
+    display: flex;
+    justify-content: center;
+    border: 7px solid gold;
+}
+.ringcircle2{
+    height: 200px;
+    width: 200px;
+    border-radius:50%;
+    background-color: green;
+    position:absolute;
+    top:2px;
+    display: flex;
+    justify-content: center;
+    border: 5px solid gold;
+}
+.secondcircle{
+    height: 300px;
+    width: 300px;
+    border-radius:50%;
+    background-color: orange;
+    position:absolute;
+    top:-49px;
+    border: 2px solid red;
+}
+
+/* CSS FOR THE SQUARES */
+.squares{
+    position:absolute;
+    /* width:100%; */
+    left:50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    top:25%;
+    
+}
+
+.sq1,.sq2,.sq3,.sq4,.sq5{
+    height: 200px;
+    width: 200px;
+    background-color:green;
+    position:absolute;
+    /* border-radius: 15px; */
+    
+}
+
+.button{
+    position:absolute;
+    bottom:70px;
+    left:670px;
+    
+
+}
+
+/* ANIMATIONS */
+.sq1{
+    animation: rotate 1s ease-in-out 1s both 5;
+    
+}
+.sq2{
+    transform: rotateZ(72deg);
+    animation: rotate2 1s ease-in-out 2s both 4;
+}
+.sq3{
+    transform: rotateZ(144deg);
+    animation: rotate3 1s ease-in-out 3s both 3;
+}
+.sq4{
+    transform: rotateZ(288deg);
+    animation: rotate4 1s ease-in-out 4s both 2;
+}
+.sq5{
+    transform: rotateZ(576deg);
+    animation: rotate5 1s ease-in-out 5s both 1;
+}
+
+
+@keyframes rotate {
+    from{transform:rotateZ(0deg)}
+    to{transform:rotateZ(360deg)}
+}
+@keyframes rotate2 {
+    from{transform:rotateZ(72deg)}
+    to{transform:rotateZ(432deg)}
+}
+@keyframes rotate3 {
+    from{transform:rotateZ(144deg)}
+    to{transform:rotateZ(504deg)}
+}
+@keyframes rotate4 {
+    from{transform:rotateZ(288deg)}
+    to{transform:rotateZ(648deg)}
+}
+@keyframes rotate5 {
+    from{transform:rotateZ(576deg)}
+    to{transform:rotateZ(936deg)}
+}
+
+@keyframes reveal {
+    from{
+    width:100%}
+    to{
+    width:0%;}
+}
+
